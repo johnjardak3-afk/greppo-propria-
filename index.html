@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Greppo Propria — Luxury Winery Estate</title>
+<meta name="description" content="Greppo Propria is an ultra-luxury winery and italian restaurant — vineyards, cellar, fine dining, an infinity pool, a private chapel and events, since 2016.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PRELOADER
+     ============================================================ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">Greppo Propria</div>
+</div>
+
+<!-- ============================================================
+     NAVIGATION — glassmorphism, transitions on scroll
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><img src="images/logo.png" alt="Greppo Propria crest" class="nav-logo-img">Greppo <span>Propria</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#story" data-close>Our Story</a>
+      <a href="#estate" data-close>The Estate</a>
+      <a href="#wines" data-close>Wines</a>
+      <a href="#restaurant" data-close>Restaurant</a>
+      <a href="#events" data-close>Events</a>
+      <a href="#reservation" class="nav-cta" data-close>Reserve</a>
+      <a href="https://www.instagram.com/greppopropria/" class="nav-cta" data-close>Instagram </a>
+      <a href="https://google.com/maps/place/Greppo+Propria/data=!4m2!3m1!1s0x0:0xe0a0771d59f19e96?sa=X&ved=1t:2428&ictx=111&cshid=1783332729179875" class="nav-cta" data-close>Maps</a>
+    </nav>
+ 
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     SECTION 1 — FULLSCREEN CINEMATIC HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-scene" id="heroScene" aria-hidden="true">
+    <div class="hero-scene-image"></div>
+    <div class="hero-scene-glow"></div>
+    <div class="hero-scene-rows"></div>
+  </div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow fade-up">Choueir, Lebanon · Est. 2016</p>
+    <h1 class="hero-title">
+      <span class="fade-up" style="--d:0.05s">Welcome to</span>
+      <span class="fade-up hero-title-script" style="--d:0.18s">Greppo Propria</span>
+      <span class="fade-up hero-title-sub" style="--d:0.3s">Luxury Winery Estate</span>
+    </h1>
+    <p class="hero-subtitle fade-up" style="--d:0.42s">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nisi deleniti illo quae, consequatur saepe iste temporibus architecto. 
+    </p>
+    <a href="#story" class="btn btn-gold ripple fade-up" style="--d:0.55s">Begin the Estate Tour</a>
+  </div>
+
+  <a href="#story" class="hero-scroll" aria-label="Scroll down">
+    <span class="hero-scroll-dot"></span>
+  </a>
+</section>
+
+<!-- ============================================================
+     SECTION 2 — OUR STORY
+     ============================================================ -->
+<section class="section story" id="story">
+  <div class="container story-grid">
+    <div class="story-visual fade-left">
+      <div class="scene scene-estate">
+        <img src="images/downview.png">
+        <span class="scene-caption">The Propria, seen from the lower vineyard</span>
+      </div>
+    </div>
+
+    <div class="story-copy fade-right">
+      <p class="eyebrow">Our Story</p>
+      <h2 class="h2">A family, a hillside, <em>a Winery</em></h2>
+      <p class="p-lead">
+        Greppo Propria was planted by Hisham Jerdak in 2016, on a south-facing
+        hillside his own.The Jerdak family still lives on the estate — and still believes
+        that hospitality and winemaking are the same craft, practiced twice a day.
+      </p>
+      <p class="p-body">
+        What began as a modest land has become one of Choueir's
+        most quietly celebrated estates: a working vineyard, a Michelin-inspired
+        table, and a home for the kind of gatherings — weddings, harvest
+        dinners, long August afternoons by the pool — that people remember
+        for the rest of their lives.
+      </p>
+      <div class="story-signature">
+        <span class="story-signature-line"></span>
+        <div>
+          <strong>Hisham Jerdak</strong>
+          <small>Founder and creator of Greppo Propria</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 — THE ESTATE (animated statistics)
+     ============================================================ -->
+<section class="section estate" id="estate">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">The Estate</p>
+      <h2 class="h2">Measured in vines, <em>not meters</em></h2>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card fade-up">
+        <span class="stat-num" data-count="20000">0</span>
+        <span class="stat-suffix">m2</span>
+        <p class="stat-label">Meters under vine</p>
+      </div>
+      <div class="stat-card fade-up" style="--d:0.08s">
+        <span class="stat-num" data-count="10000">0</span>
+        <p class="stat-label">Individual vines</p>
+      </div>
+      <div class="stat-card fade-up" style="--d:0.16s">
+        <span class="stat-num" data-count="5">0</span>
+        <p class="stat-label">Grape varieties</p>
+      </div>
+      <div class="stat-card fade-up" style="--d:0.24s">
+        <span class="stat-num" data-count="2016">0</span>
+        <p class="stat-label">Year founded</p>
+      </div>
+      <div class="stat-card fade-up" style="--d:0.32s">
+        <span class="stat-num" data-count="7000">0</span>
+        <p class="stat-label">Bottles produced annually</p>
+      </div>
+      <div class="stat-card fade-up" style="--d:0.4s">
+        <span class="stat-num" data-count="100">0</span>
+        <span class="stat-suffix">%</span>
+        <p class="stat-label">Certified sustainable</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4 — THE VINEYARD TOUR (alternating image/text)
+     ============================================================ -->
+<section class="section vineyard-tour" id="vineyard">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">The Vineyard Tour</p>
+      <h2 class="h2">Walk the rows <em>with us</em></h2>
+    </div>
+
+    <div class="alt-row">
+      <div class="alt-visual fade-left">
+        <div class="scene scene-rows-1"><img src="images/view.png" ><span class="scene-caption">South-facing terraces, planted in 2016</span></div>
+      </div>
+      <div class="alt-copy fade-right">
+        <h3 class="h3">South-facing, Mediterranean</h3>
+        <p class="p-body">Every parcel at Greppo Propria faces south or south-west,
+        catching the full arc of Choueir's and Ain Al Sendianeh's sun. The Mediterranean climate — hot,
+        dry summers, mild winters — is exactly what Sangiovese and its
+        neighboring varieties were bred for.</p>
+      </div>
+    </div>
+
+    <div class="alt-row reverse">
+      <div class="alt-visual fade-right">
+        <div class="scene scene-rows-2"><img src="images/vines.png" ><span class="scene-caption">1.2 metres between vines, by design</span></div>
+        
+      </div>
+      <div class="alt-copy fade-left" >
+        <h3 class="h3">Spacing as a decision</h3>
+        <p class="p-body">Vines are trained 1.2 metres apart in narrow rows,
+        forcing roots to compete and dig deep for the estate's mineral
+        — the single biggest reason our fruit tastes the way it does.</p>
+      </div>
+    </div>
+
+    <div class="alt-row">
+      <div class="alt-visual fade-left">
+        <div class="scene scene-harvest"><img src="images/harvest.png" ><span class="scene-caption">Hand-picked, basket by basket</span></div>
+      </div>
+      <div class="alt-copy fade-right">
+        <h3 class="h3">Harvest, by hand</h3>
+        <p class="p-body">Every cluster at Greppo Propria is still picked by
+        hand, into 15kg crates, usually before nine in the morning while
+        the fruit is cool. Nothing is mechanically harvested — nothing rushed.</p>
+      </div>
+    </div>
+
+    <div class="alt-row reverse">
+      <div class="alt-visual fade-right">
+        <div class="scene scene-organic"><img src="images/organic.png" ><span class="scene-caption">Certified organic since 2009</span></div>
+      </div>
+      <div class="alt-copy fade-left">
+        <h3 class="h3">Organic, on principle</h3>
+        <p class="p-body">No synthetic pesticides or herbicides have touched
+        these hills since 2009. Cover crops, sheep and hand-hoeing do the
+        work chemistry used to — slower, but it shows in the glass.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — HOUSE WINES COLLECTION
+     ============================================================ -->
+<section class="section wines" id="wines">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">House Wines</p>
+      <h2 class="h2">The <em>collection</em></h2>
+    </div>
+
+    <div class="wine-grid">
+
+      <article class="wine-card fade-up">
+        <div class="wine-bottle bottle-photo"><img src="images/sangue%202018.png" alt="Sangue 2018 bottle"><div class="bottle-shine"></div></div>
+        <h3 class="h3">Sangue 2018</h3>
+        <p class="p-small">Sangiovese-led, aged since 2018 in a mix of 
+        Italian oak. Structured, savory, built to age a decade.</p>
+        <dl class="wine-meta">
+          <div><dt>Tasting notes</dt><dd>TO ADD</dd></div>
+          <div><dt>Serving temp</dt><dd>17–18°C</dd></div>
+          <div><dt>Pairing</dt><dd>TO ADD</dd></div>
+          <div><dt>Awards</dt><dd>TO ADD</dd></div>
+        </dl>
+      </article>
+      <article class="wine-card fade-up">
+        <div class="wine-bottle bottle-photo"><img src="images/sangue%20de%20la%20vitta%202017.png" alt="Sangue de la Vitta 2017 bottle"><div class="bottle-shine"></div></div>
+        <h3 class="h3">Sangue della Vita 2017</h3>
+        <p class="p-small">Sangiovese-led, aged since 2017 in a mix
+        Italian oak. Structured, savory, built to age a decade.</p>
+        <dl class="wine-meta">
+          <div><dt>Tasting notes</dt><dd>TO ADD</dd></div>
+          <div><dt>Serving temp</dt><dd>17–18°C</dd></div>
+          <div><dt>Pairing</dt><dd>TO ADD</dd></div>
+          <div><dt>Awards</dt><dd>TO ADD</dd></div>
+        </dl>
+      </article>
+      <article class="wine-card fade-up">
+        <div class="wine-bottle bottle-photo"><img src="images/sangue%20de%20la%20vitta%202016.png" alt="Sangue de la Vitta 2016 bottle"><div class="bottle-shine"></div></div>
+        <h3 class="h3">Sangue della Vita 2016 </h3>
+        <p class="p-small">Sangiovese-led, aged since 2016 in a mix
+        Italian oak. Structured, savory, built to age a decade.</p>
+        <dl class="wine-meta">
+          <div><dt>Tasting notes</dt><dd>TO ADD</dd></div>
+          <div><dt>Serving temp</dt><dd>17–18°C</dd></div>
+          <div><dt>Pairing</dt><dd>TO ADD</dd></div>
+          <div><dt>Awards</dt><dd>TO ADD</dd></div>
+        </dl>
+      </article>
+      <article class="wine-card fade-up" style="--d:0.08s">
+        <div class="wine-bottle bottle-photo"><img src="images/rose.png" alt="Rosé bottle"><div class="bottle-shine"></div></div>
+        <h3 class="h3">Rosé</h3>
+        <p class="p-small">The dry Rosé blends Syrah and Cabernet
+          Sauvignon. Fermented at cool tempretures to retain the
+          ultimate purity of the fruit, it reveals a round profile 
+          of red berries uplifted by a floral touch.
+        </p>
+        <dl class="wine-meta">
+          <div><dt>Blend </dt><dd>50% Syrah, 50% Cabenet Sauvignon</dd></div>
+          <div><dt>Serving temp</dt><dd>8–10°C</dd></div>
+          <div><dt>Alcohol</dt><dd>13% VOL</dd></div>
+        </dl>
+      </article>
+
+      <article class="wine-card fade-up" style="--d:0.16s">
+        <div class="wine-bottle bottle-photo"><img src="images/bianco.png" alt="Bianco bottle"><div class="bottle-shine"></div></div>
+        <h3 class="h3">Bianco</h3>
+        <p class="p-small">A pure and vibrant White wine, this balanced
+          blend of Sauvignon Blanc and Viognier is softly pressed and aged
+          on fine lees to preserve its natural briliance.
+        </p>
+        <dl class="wine-meta">
+          <div><dt>Blend </dt><dd>50% Sauvignon Blanc, 50% Viognier</dd></div>
+          <div><dt>Serving temp</dt><dd>8–10°C</dd></div>
+          <div><dt>Alcohol</dt><dd>13.2% VOL</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 — WINE CELLAR (dark, dramatic)
+     ============================================================ -->
+<section class="section cellar" id="cellar">
+  <div class="cellar-glow" aria-hidden="true"></div>
+  <div class="container cellar-grid">
+    <div class="cellar-copy fade-right">
+      <p class="eyebrow eyebrow-light">The Wine Cellar</p>
+      <h2 class="h2 h2-light">Carved into <em>the rock</em></h2>
+      <p class="p-body p-light">
+        Our cellar holds constant conditions the family 
+        has never needed machinery to achieve: 14°C, 75% humidity,
+        total darkness, all year round.
+      </p>
+      <ul class="cellar-list">
+        <li><strong>French oak</strong> — Allier and Tronçais barriques, for the Riserva</li>
+        <li><strong>Italian oak</strong> — Slavonian botti, for longer, gentler aging</li>
+        <li><strong>Barrel room</strong> — 400 barrels resting at any given time</li>
+        <li><strong>Bottle library</strong> — every vintage since 2016, kept in the deepest room</li>
+      </ul>
+    </div>
+    <div class="cellar-visual fade-left">
+      <div class="scene scene-cellar"><span class="scene-caption">The barrel room, down the rocks</span><img src="images/cave.jpg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7 — FINE DINING RESTAURANT
+     ============================================================ -->
+<section class="section restaurant" id="restaurant">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">La Tavola</p>
+      <h2 class="h2">The <em>restaurant</em></h2>
+      <p class="p-lead center">Michelin-inspired Tuscan cuisine, served where
+      the wine is made — never more than above the cellar.</p>
+    </div>
+
+    <div class="restaurant-top">
+      <div class="chef-card fade-left">
+        <div class="scene scene-chef"><img src="images/restaurant.png"></div>
+      </div>
+
+      <div class="restaurant-facts fade-right">
+        <div class="fact-line"><span>Signature dishes</span><p>Parma, risotto al limoni, tagliere magnum</p></div>
+        <div class="fact-line"><span>Wine pairing</span><p>Every menu paired glass by glass with estate wines</p></div>
+        <div class="fact-line"><span>Private dining</span><p>The Propria Room, seating up to 20 guests</p></div>
+        <div class="fact-line"><span>Outdoor terrace</span><p>Stone terrace overlooking the lower vineyard</p></div>
+      </div>
+    </div>
+
+    <div class="restaurant-gallery">
+      <div class="scene scene-dish-1 zoom"></div>
+      <div class="scene scene-dish-2 zoom" style="--d:0.08s"></div>
+      <div class="scene scene-dish-3 zoom" style="--d:0.16s"></div>
+      <div class="scene scene-terrace zoom" style="--d:0.24s"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 8 — INFINITY POOL
+     ============================================================ -->
+<section class="section pool" id="pool">
+  <div class="container pool-grid">
+    <div class="pool-visual fade-left">
+      <div class="scene scene-pool"><span class="scene-caption">The infinity edge, at sunset</span>
+      <img src="images/pool.jpg"></div>
+    </div>
+    <div class="pool-copy fade-right">
+      <p class="eyebrow">The Infinity Pool</p>
+      <h2 class="h2">Where the vines <em>meet the sky</em></h2>
+      <p class="p-body">
+        The pool's edge was cut to disappear exactly at the horizon line of
+        the valley — a small piece of engineering that took 
+        one very patient stonemason to get right.
+      </p>
+      <ul class="detail-list">
+        <li><strong>Sunset views</strong> — west-facing, over the lower terraces</li>
+        <li><strong>House wine bar</strong> — poolside, open from midday</li>
+        <li><strong>Open</strong> — daily, April to October</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9 — PRIVATE CHAPEL
+     ============================================================ -->
+<section class="section chapel" id="chapel">
+  <div class="container chapel-grid">
+    <div class="chapel-copy fade-left">
+      <p class="eyebrow">St Elias</p>
+      <h2 class="h2">The <em>chapel</em></h2>
+      <p class="p-body">
+        A small stone chapel, deconsecrated in the 2016s and gently restored,
+        stands at the most gorgeous point of the estate. Private vows are still exchanged
+        here, with every row of vines visible from the chapel steps.
+      </p>
+      <ul class="detail-list">
+        <li><strong>Seats</strong> — up to 30 guests</li>
+        <li><strong>Ceremonies</strong> — civil, symbolic and non-denominational</li>
+        <li><strong>Included</strong> — a private tasting for the couple beforehand</li>
+      </ul>
+    </div>
+    <div class="chapel-visual fade-right">
+      <div class="scene scene-chapel"><img src="images/chapel.png" ><span class="scene-caption">St Elias , above the vineyard</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 10 — PRIVATE EVENTS
+     ============================================================ -->
+<section class="section events" id="events">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Private area</p>
+      <h2 class="h2">Occasions, <em>held properly</em></h2>
+      <div class="scene scene-private"><img src="images/private.jpg"></div>
+    </div>
+
+    <div class="events-grid">
+      <div class="event-card fade-up"><h3 class="h3">Corporate Events</h3><p class="p-small">The Propria Room and conference terrace, reserved for the day.</p></div>
+      <div class="event-card fade-up" style="--d:0.12s"><h3 class="h3">Wine Tastings</h3><p class="p-small">Guided flights through every vintage in the library.</p></div>
+      <div class="event-card fade-up" style="--d:0.18s"><h3 class="h3">Birthday Celebrations</h3><p class="p-small">Private dining or courtyard receptions, any size.</p></div>
+      <div class="event-card fade-up" style="--d:0.24s"><h3 class="h3">Private Dinners</h3><p class="p-small">A table set anywhere on the estate you choose.</p></div>
+      <div class="event-card fade-up" style="--d:0.3s"><h3 class="h3">Conference Room</h3><p class="p-small">A quiet, well-lit room for up to 30, cellar included.</p></div>
+    </div>
+
+    <div class="events-cta fade-up">
+      <p>Every event at Greppo Propria is quoted individually.</p>
+      <a href="#reservation" class="btn btn-gold ripple">Request Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 11 — ESTATE MAP
+     ============================================================ -->
+<section class="section estate-map" id="map">
+  <div class="container">
+    <div class="section-head fade-up">
+      <p class="eyebrow">Find Your Way</p>
+      <h2 class="h2">The <em>estate map</em></h2>
+    </div>
+
+    <div class="map-wrap fade-up">
+      <div class="map-scene"><img src="images/topview.png">
+        <button class="map-pin" style="top:30%; left:45%;" data-label="Restaurant" aria-label="Restaurant"></button>
+        <button class="map-pin" style="top:18%; left:85%;" data-label="Infinity Pool" aria-label="Infinity Pool"></button>
+        <button class="map-pin" style="top:40%; left:60%;" data-label="Vineyards" aria-label="Vineyards"></button>
+        <button class="map-pin" style="top:80%; left:50%;" data-label="Vineyards" aria-label="Vineyards"></button>
+        <button class="map-pin" style="top:55%; left:20%;" data-label="Vineyards" aria-label="Vineyards"></button>
+        <button class="map-pin" style="top:50%; left:80%;" data-label="Chapel" aria-label="Private Chapel"></button>
+        <div class="map-tooltip" id="mapTooltip"></div>
+      </div>
+      <p class="map-hint">Tap a marker to see what's there</p>
+    </div>
+  </div>
+</section>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div class="lightbox-scene" id="lightboxScene"></div>
+  <p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+
+<!-- ============================================================
+     SECTION 14 — RESERVATION
+     ============================================================ -->
+<section class="section reservation" id="reservation">
+  <div class="container reservation-grid">
+    <div class="reservation-copy fade-left">
+      <p class="eyebrow">Reserve</p>
+      <h2 class="h2">Plan your <em>visit</em></h2>
+      <p class="p-body">
+        Tell us what brings you to Greppo Propria, and someone from the estate
+        will write back within a day — usually sooner.
+      </p>
+    </div>
+
+    <form class="reservation-form fade-right" id="reservationForm" novalidate>
+      <div class="form-row">
+        <label for="rName">Full name</label>
+        <input type="text" id="rName" name="name" required autocomplete="name">
+      </div>
+
+      <div class="form-row split">
+        <div>
+          <label for="rPhone">Phone</label>
+          <input type="tel" id="rPhone" name="phone" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="form-row split">
+        <div>
+          <label for="rType">Enquiry type</label>
+          <select id="rType" name="type" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="restaurant">Restaurant reservation</option>
+            <option value="event">Private event</option>
+            <option value="tasting">Wine tasting</option>
+            <option value="pool">Pool day</option>
+          </select>
+        </div>
+        <div>
+          <label for="rDate">Preferred date</label>
+          <input type="date" id="rDate" name="date">
+        </div>
+      </div>
+
+      <div class="form-row split">
+        <div>
+          <label for="rGuests">Number of guests</label>
+          <input type="number" id="rGuests" name="guests" min="1" max="300" placeholder="e.g. 2">
+        </div>
+        <div>
+          <label for="rTime">Preferred time</label>
+          <input type="time" id="rTime" name="time">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="rMessage">Special requests</label>
+        <textarea id="rMessage" name="message" rows="4" placeholder="Dietary needs, celebrations, anything we should know..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-gold full ripple">Submit Request</button>
+      <a href="tel:+961 76444840" class="btn btn-line full ripple call-us-btn">Or Call Us — +961 76 444 840</a>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 15 — FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">Greppo <span>Propria</span></a>
+      <p class="p-small">An estate of vine, table and stone in the hills of Choueir, held by the Jerdak family since 2016.</p>
+      <div class="footer-social">
+          <a href="https://www.instagram.com/greppopropria/" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4.2"/>
+            <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <p class="p-small">Restaurant: Mon–Sun, from 13:00 - 16:30 till 19:00 - 24:00 <br>
+      Tastings &amp; Shop: daily, 10:00–11:00<br>
+      Pool: daily, May–October</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p class="p-small">Strada di Greppo Propria <br>Choueir - Ain Al Sendianeh<br>
+      <a href="tel:+961 76444840">+961 76 444 840</a><br>
+      <a href="mailto:estate@greppopropria.com">estate@greppopropria.com</a></p>
+      <a href="https://google.com/maps/place/Greppo+Propria/data=!4m2!3m1!1s0x0:0xe0a0771d59f19e96?sa=X&ved=1t:2428&ictx=111&cshid=1783332729179875" target="_blank" rel="noopener" class="footer-map-link">Open in Google Maps →</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Greppo Propria. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
