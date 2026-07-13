@@ -45,7 +45,7 @@ button{ font-family: inherit; }
 :focus-visible{ outline: 2px solid var(--gold-light); outline-offset: 3px; }
 
 .container{ max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.2rem, 4vw, 2.5rem); }
-.section{ padding: clamp(4.5rem, 9vw, 8rem) 0; position: relative; }
+.section{ padding: clamp(2.8rem, 5.2vw, 4.75rem) 0; position: relative; }
 
 .eyebrow{
   font-family: var(--font-body);
@@ -84,7 +84,7 @@ button{ font-family: inherit; }
 .p-body.p-light{ color: rgba(247,241,230,0.75); }
 .p-small{ font-size: 0.86rem; color: var(--champagne-dim); }
 
-.section-head{ max-width: 620px; margin: 0 auto 3.5rem; text-align:center; }
+.section-head{ max-width: 620px; margin: 0 auto 2.4rem; text-align:center; }
 
 /* ================================================================
    REUSABLE SCENE PANELS (illustrated "photography")
@@ -271,8 +271,8 @@ button{ font-family: inherit; }
 .hero{
   position: relative;
   min-height: 100svh;
-  display:flex; align-items:center; justify-content:center;
-  text-align:center;
+  display:flex; align-items:center; justify-content:flex-start;
+  text-align:left;
   overflow:hidden;
   padding: 7rem 1.5rem 4rem;
 }
@@ -286,28 +286,30 @@ button{ font-family: inherit; }
 .hero-scene-glow{
   position:absolute; inset:0;
   background:
-    radial-gradient(ellipse 70% 55% at 50% 20%, rgba(198,161,91,0.16), transparent 60%),
-    radial-gradient(ellipse 90% 70% at 50% 90%, rgba(90,15,26,0.7), transparent 60%),
-    linear-gradient(180deg, rgba(90,15,26,0.55) 0%, rgba(10,10,10,0.88) 80%);
+    radial-gradient(ellipse 60% 70% at 15% 45%, rgba(90,15,26,0.35), transparent 62%),
+    linear-gradient(100deg, rgba(9,8,8,0.94) 0%, rgba(10,9,9,0.86) 30%, rgba(10,9,9,0.55) 48%, rgba(10,9,9,0.18) 66%, rgba(10,9,9,0.04) 82%),
+    linear-gradient(0deg, rgba(6,5,5,0.75) 0%, transparent 32%);
 }
 .hero-scene-rows{
   position:absolute; inset:0;
   background-image: repeating-linear-gradient(90deg, rgba(198,161,91,0.08) 0 1px, transparent 1px 50px);
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent 75%);
+  mask-image: radial-gradient(ellipse 55% 60% at 20% 45%, black, transparent 75%);
 }
 .hero-vignette{
   position:absolute; inset:0; z-index:1;
   box-shadow: inset 0 0 220px 60px rgba(0,0,0,0.75);
   pointer-events:none;
 }
-.hero-content{ position:relative; z-index:2; max-width: 820px; }
+.hero-content{ position:relative; z-index:2; max-width: 640px; }
 .hero-eyebrow{ font-size:0.75rem; letter-spacing:0.32em; text-transform:uppercase; color: var(--gold-light); margin-bottom: 1.2rem; }
-.hero-title{ display:flex; flex-direction:column; gap: 0.2rem; margin: 0 0 1.4rem; }
+.hero-title{ display:flex; flex-direction:column; gap: 0.1rem; margin: 0 0 1.4rem; }
 .hero-title span{ font-family: var(--font-head); color: var(--champagne); }
-.hero-title > span:first-child{ font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight:400; }
-.hero-title-script{ font-size: clamp(3.4rem, 9vw, 6.6rem); line-height: 1; }
-.hero-title-sub{ font-size: clamp(1rem, 2.2vw, 1.4rem); letter-spacing: 0.12em; text-transform: uppercase; font-weight:400; color: var(--champagne-dim) !important; margin-top: 0.4rem; }
-.hero-subtitle{ font-size: clamp(1.02rem, 1.6vw, 1.2rem); color: var(--champagne-dim); max-width: 48ch; margin: 0 auto 2.4rem; font-family: var(--font-head); font-style: italic; }
+.hero-title > span{ font-size: clamp(2.1rem, 4.6vw, 3.4rem); font-weight:400; line-height: 1.08; }
+.hero-title-script{ font-size: clamp(2.6rem, 5.6vw, 4.2rem) !important; line-height: 1.05; }
+.hero-subtitle{ font-size: clamp(1rem, 1.4vw, 1.1rem); color: var(--champagne-dim); max-width: 44ch; margin: 0 0 2.2rem; font-family: var(--font-body); font-weight: 300; font-style: normal; }
+.hero-cta{ gap: 0.55rem; }
+.hero-cta span{ transition: transform .35s var(--ease); }
+.hero-cta:hover span{ transform: translateX(4px); }
 .hero-scroll{
   position:absolute; bottom: 2.2rem; left:50%; transform: translateX(-50%);
   width: 26px; height: 42px; border: 1.5px solid var(--gold); border-radius: 20px;
@@ -333,7 +335,7 @@ button{ font-family: inherit; }
 /* ================================================================
    STORY
    ================================================================ */
-.story-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items:center; }
+.story-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items:center; }
 .story-visual{ position: relative; }
 .story-badge{
   position:absolute; bottom:-1.6rem; left:-1.6rem;
@@ -376,7 +378,7 @@ button{ font-family: inherit; }
 /* ================================================================
    VINEYARD TOUR — alternating rows
    ================================================================ */
-.alt-row{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items:center; margin-bottom: 4.5rem; }
+.alt-row{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.4rem; align-items:center; margin-bottom: 2.8rem; }
 .alt-row:last-child{ margin-bottom:0; }
 .alt-row.reverse{ direction: rtl; }
 .alt-row.reverse > *{ direction: ltr; }
@@ -427,7 +429,7 @@ button{ font-family: inherit; }
   background: radial-gradient(ellipse 60% 50% at 80% 20%, rgba(198,161,91,0.09), transparent 60%);
   pointer-events:none;
 }
-.cellar-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items:center; }
+.cellar-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items:center; }
 .cellar-list{ margin: 1.6rem 0 0; display:flex; flex-direction:column; gap: 0.7rem; }
 .cellar-list li{ font-size:0.92rem; color: rgba(247,241,230,0.75); padding-left: 1.1rem; position:relative; }
 .cellar-list li::before{ content:""; position:absolute; left:0; top:0.6em; width:6px; height:1px; background: var(--gold); }
@@ -436,7 +438,7 @@ button{ font-family: inherit; }
 /* ================================================================
    RESTAURANT
    ================================================================ */
-.restaurant-top{ display:grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; margin-bottom: 3rem; align-items:center; }
+.restaurant-top{ display:grid; grid-template-columns: 1fr 1.2fr; gap: 2.2rem; margin-bottom: 2rem; align-items:center; }
 .restaurant-facts{ display:flex; flex-direction:column; gap: 1.2rem; }
 .fact-line span{ display:block; font-size: 0.7rem; letter-spacing:.14em; text-transform:uppercase; color: var(--gold); margin-bottom: .3rem; }
 .fact-line p{ margin:0; font-size:0.92rem; color: var(--champagne-dim); }
@@ -446,7 +448,7 @@ button{ font-family: inherit; }
 /* ================================================================
    POOL / CHAPEL — two-column
    ================================================================ */
-.pool-grid, .chapel-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items:center; }
+.pool-grid, .chapel-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items:center; }
 .detail-list{ margin: 1.4rem 0 1.8rem; display:flex; flex-direction:column; gap: 0.6rem; }
 .detail-list li{ font-size:0.92rem; color: var(--champagne-dim); padding-left:1.1rem; position:relative; }
 .detail-list li::before{ content:""; position:absolute; left:0; top:0.6em; width:6px; height:1px; background: var(--gold); }
@@ -458,7 +460,7 @@ button{ font-family: inherit; }
 /* ================================================================
    EVENTS
    ================================================================ */
-.events-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-bottom: 3rem; }
+.events-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-bottom: 2rem; }
 .event-card{
   padding: 2rem 1.6rem; border-radius: var(--radius-md);
   border: 1px solid rgba(198,161,91,0.18);
@@ -566,7 +568,7 @@ button{ font-family: inherit; }
 /* ================================================================
    RESERVATION FORM
    ================================================================ */
-.reservation-grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 4rem; }
+.reservation-grid{ display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 2.8rem; }
 .reservation-form{
   background: linear-gradient(160deg, rgba(90,15,26,0.22), rgba(27,27,27,0.6));
   border: 1px solid rgba(198,161,91,0.2);
@@ -602,7 +604,7 @@ textarea{ resize:vertical; min-height:100px; }
 /* ================================================================
    FOOTER
    ================================================================ */
-.footer{ background: var(--charcoal); border-top: 1px solid rgba(198,161,91,0.15); padding: 4rem 0 1.6rem; }
+.footer{ background: var(--charcoal); border-top: 1px solid rgba(198,161,91,0.15); padding: 2.8rem 0 1.6rem; }
 .footer-grid{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.6rem; }
 .footer-brand p{ margin: 1rem 0 1.2rem; max-width: 34ch; }
 .footer-social{ display:flex; gap: 1.2rem; }
@@ -623,6 +625,21 @@ textarea{ resize:vertical; min-height:100px; }
   border-top: 1px solid rgba(198,161,91,0.12);
   font-size: 0.78rem; color: var(--champagne-dim); text-align:center;
 }
+
+/* ================================================================
+   WHATSAPP FLOAT
+   ================================================================ */
+.whatsapp-float{
+  position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 300;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366;
+  color: #0b1a10;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 12px 26px -8px rgba(0,0,0,0.55);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.whatsapp-float:hover{ transform: translateY(-3px) scale(1.05); box-shadow: 0 16px 32px -8px rgba(0,0,0,0.6); }
+.whatsapp-float svg{ display:block; }
 
 /* ================================================================
    RESPONSIVE
@@ -679,9 +696,11 @@ textarea{ resize:vertical; min-height:100px; }
   .stat-grid{ grid-template-columns: 1fr; }
   .masonry{ columns: 1; }
   .restaurant-gallery{ grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-  .hero{ padding: 6rem 1.1rem 3.5rem; }
-  .hero-title-script{ font-size: clamp(2.6rem, 14vw, 4rem); }
-  .hero-subtitle{ max-width: 34ch; }
+  .hero{ padding: 6rem 1.3rem 3.5rem; }
+  .hero-content{ max-width: 100%; }
+  .hero-title > span{ font-size: clamp(1.7rem, 8vw, 2.2rem); }
+  .hero-title-script{ font-size: clamp(2.1rem, 11vw, 2.8rem) !important; }
+  .hero-subtitle{ max-width: 34ch; margin-bottom: 1.8rem; }
   .btn{ padding: 0.9rem 1.6rem; font-size: 0.76rem; }
   .wine-bottle{ height: 170px; }
   .story-badge{ padding: 1rem 1.3rem; }
@@ -693,11 +712,13 @@ textarea{ resize:vertical; min-height:100px; }
   .footer{ padding: 3rem 0 1.4rem; }
   .lightbox{ padding: 1.2rem; }
   .lightbox-close{ top: 1rem; right: 1rem; }
+  .whatsapp-float{ width: 50px; height: 50px; right: 1rem; bottom: 1rem; }
+  .whatsapp-float svg{ width: 24px; height: 24px; }
 }
 
 @media (max-width: 360px){
   .nav-logo span{ display:none; }
   .restaurant-gallery{ grid-template-columns: 1fr; }
-  .hero-title-script{ font-size: 2.3rem; }
-  .hero-title > span:first-child{ font-size: 1.1rem; }
+  .hero-title-script{ font-size: 2rem !important; }
+  .hero-title > span{ font-size: 1.5rem; }
 }
