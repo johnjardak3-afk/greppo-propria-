@@ -144,9 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pin.addEventListener('blur', () => tooltip.classList.remove('show'));
   });
 
-  /* ================================================================
-     GALLERY LIGHTBOX
-     ================================================================ */
+  /* GALLERY LIGHTBOX */
   const masonryItems = document.querySelectorAll('.masonry-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxScene = document.getElementById('lightboxScene');
@@ -172,9 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
 
-  /* ================================================================
-     RESERVATION FORM
-     ================================================================ */
+  /* RESERVATION FORM */
   const HOSTESS_WHATSAPP = '96176444840';
 
   const form = document.getElementById('reservationForm');
@@ -213,9 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { status.textContent = ''; }, 9000);
   });
 
-  /* ================================================================
-     NEWSLETTER FORM
-     ================================================================ */
+  /* NEWSLETTER FORM */
   const newsletterForm = document.getElementById('newsletterForm');
   const newsletterStatus = document.getElementById('newsletterStatus');
   newsletterForm.addEventListener('submit', (e) => {
